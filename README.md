@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @fefo716
-- 👀 I’m interested in Data & Machine Learning
-- 🌱 I’m currently learning Python = Machine Learning and Data Science
-- 💞️ I’m looking to collaborate on what ever you want in order to improve my skills
+- 👀 I’m interested in A.I
+- 🌱 I’m currently learning Machine Learning and Deep Learning (python)
+- 💞️ Fan of sports, cars and tecnology
 - 📫 How to reach me fefo.morales@hotmail.com
 
 <!---
