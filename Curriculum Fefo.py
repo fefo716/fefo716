@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Take the info for the csv
-df = pd.read_csv("C:\\Users\\Usuario\\Desktop\\FefoLance\\Morales Rampulla\\fefo-cv.csv",delimiter=';')
+df = pd.read_csv(url="https://github.com/fefo716/fefo716/blob/main/fefo-cv.csv",delimiter=';')
 
 # Variables
 lectura = True
