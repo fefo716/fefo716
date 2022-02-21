@@ -1,4 +1,4 @@
-# Import the necessary librery
+# Import the necessary libraries
 import pandas as pd
 import time
 
@@ -18,7 +18,7 @@ data = {'numerador': [1,2,3,4,5,6,7,8,9], 'campo': ['Presentación','Info de Con
                  ,'Python – orientado a objetos y Data science (librerías: pandas, numpy, seaborn, matplotlib). \n SQL – Conceptos claves para el manejo de tablas y extracción de información. \n VBA – Conceptos básicos para el armado de macros y automatización. \n MICROSOFT EXCEL – Manipulación y limpieza de datos. \n POWER BI - Visualización. \n MARIA DB – Creación de base de datos, manejo y extracción de información. \n MICROSTRATEGY – Consultas y extracción de información, armado de reportes. \n AUTOMATION ANYWHERE – Automatización de tareas. \n JIRA – Planificación y ejecución de proyectos. \n SAP – Extracción de información y consultas.'
                  ,'Quiero aportarle valor a cada proceso en el cual desempeñe mis tareas. Trabajar con creatividad, resolver con dinamismo y comunicarme con pasión. Busco adentrarme en un roll el cual me permita conocer de lleno el rubro IT y que también que me de lugar a ser escuchado y pueda opinar sobre otras tareas, áreas; crecer yo y ayudar a crecer a la empresa.']}
 
-# Create DataFrame.
+# Create the DataFrame
 dataframe = pd.DataFrame(data)
 
 # Variables
