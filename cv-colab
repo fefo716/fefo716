@@ -1,0 +1,151 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO5KGwWvmSY/wDLOt1jhcIs",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/fefo716/fefo716/blob/main/cv-colab\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "BIENVENID@ !!\n",
+        "Por favor, dale \"play\" para comenzar con la lectura de mi CV"
+      ],
+      "metadata": {
+        "id": "QYDucrAXPK2u"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Import the necessary libraries\n",
+        "import pandas as pd\n",
+        "import time\n",
+        "\n",
+        "# Create the table with the info\n",
+        "\n",
+        "data = {'numerador': [1,2,3,4,5,6,7,8,9], 'campo': ['Presentación','Info de Contacto',\n",
+        "                                                                              'Pinturas Paclin','Hiper Libertad','Kevingston',\n",
+        "                                                                              'Estudios/Cursos','Idiomas','Lenguajes y Plataformas'\n",
+        "                                                                             ,'Carta'],\n",
+        "       'cuerpo': ['Me llamo Federico, me dicen Fefo, tengo 32 años. Vivo con mi familia: Renata (mi esposa) y mis peques Pauli (5) y Jero (2); en Córdoba Capital. Soy fan de los deportes, las películas y me encanta viajar y estar al aire libre. Disfruto mi tiempo, también, leyendo sobre tecnologías y crypto, me considero auto-didacta. Mis amigos dicen que soy curioso, empático y yo estoy convencido de que solo puedo lograr cosas buenas ... pero en equipo NO HAY TECHO.'\n",
+        "                 ,'Celular: 3513290810; Mail: fefo.morales@hotmail.com; LinkedIn: https://www.linkedin.com/in/federicomoralesrampulla/'\n",
+        "                 ,'Abril 2018 _ Actualidad- Gerente de Operaciones (8 personas a cargo) • Responsable del área logística que abarca todo tipo de movimientos de entrada y salida de mercadería. Stock e inventarios, tanto de materia prima como de productos para la venta.'\n",
+        "                 ,'Abril 2016 _ Marzo 2018- Data Analyst Supply Chain. • Stock, Distribución, Logística y reportes de KPI´s a la gerencia y dirección: datos y reportes en MicroStrategy. Analista  integral: abastecimiento, logística y comercio internacional. Compras: almacén dulce, fresco y verduleria, higiene y cuidado personal. Automatización de pedidos, generación de pedidos y distribución.'\n",
+        "                 ,'Junio 2011 _ Febrero 2016- Atención al público, ventas • Atención de local comercial. Apertura/cierre de caja. Control de stock. Compras en fábrica (Buenos Aires) y manejo de presupuesto de compras.'\n",
+        "                 ,'Machine Learning & Data science _ Udemy (en curso) \\n Laboratorio IA UBA – Inteligencia Artificial y Deep Learning - (en curso) \\n Python Bootcamp Programación _ Udemy (Certificado) \\n Tecnicatura en Logística _ I.U.A (no finalizado, materias: 9/18) \\n Ingeniería Aeronáutica _ I.U.A (no finalizado,materias: 16/50)'\n",
+        "                 ,'Inglés _ b2 overall'\n",
+        "                 ,'Python – orientado a objetos y Data science (librerías: pandas, numpy, seaborn, matplotlib). \\n SQL – Conceptos claves para el manejo de tablas y extracción de información. \\n VBA – Conceptos básicos para el armado de macros y automatización. \\n MICROSOFT EXCEL – Manipulación y limpieza de datos. \\n POWER BI - Visualización. \\n MARIA DB – Creación de base de datos, manejo y extracción de información. \\n MICROSTRATEGY – Consultas y extracción de información, armado de reportes. \\n AUTOMATION ANYWHERE – Automatización de tareas. \\n JIRA – Planificación y ejecución de proyectos. \\n SAP – Extracción de información y consultas.'\n",
+        "                 ,'Quiero aportarle valor a cada proceso en el cual desempeñe mis tareas. Trabajar con creatividad, resolver con dinamismo y comunicarme con pasión. Busco adentrarme en un roll el cual me permita conocer de lleno el rubro IT y que también que me de lugar a ser escuchado y pueda opinar sobre otras tareas, áreas; crecer yo y ayudar a crecer a la empresa.']}\n",
+        "\n",
+        "# Create the DataFrame\n",
+        "dataframe = pd.DataFrame(data)\n",
+        "\n",
+        "# Variables\n",
+        "lectura = True\n",
+        "i = 0\n",
+        "n = 0\n",
+        "recruiter = ''\n",
+        "sample_text = ''\n",
+        "a = 'S'\n",
+        "\n",
+        "# Beginning\n",
+        "recruiter = input('Hola, estas en el CV interactivo de Federico, ¿cómo es tu nombre? \\n ')\n",
+        "print(f\" Antes que nada, agradezco tu tiempo {recruiter}. \\n Para manejarte por este CV tenes que guiarte por los números del índice que te muestro a continuación:\")\n",
+        "print('INDICE: \\n __ 1 - Presentación \\n __ 2 - Como contactarme \\n __ 3 - Experiencias Laborales_Gerente de Operaciones {Paclin, Pinturas y Agro} \\n __ 4 - Experiencias Laborales_Analista Supply Chain {Libertad, Retail} \\n __ 5 - Experiencias Laborales_Vendedor y At. al cliente {Kevingston House, Indumentaria} \\n __ 6 - Estudios/Cursos \\n __ 7 - Idiomas \\n __ 8 - Lenguajes y Plataformas \\n __ 9 - Carta')\n",
+        "i = int(input('\\n Que te gustaría leer de mi CV?: \\n'))    \n",
+        "\n",
+        "while lectura:      \n",
+        "    if i in range(0,10):\n",
+        "            texto_selecc = dataframe[(dataframe['numerador'] == i)]\n",
+        "            titulo = list(texto_selecc['campo'])\n",
+        "            print(f'Bien, elegiste: {titulo}')\n",
+        "            lectura2 = True\n",
+        "            sample_text = list(texto_selecc['cuerpo'])\n",
+        "            print(f\" {sample_text}\")\n",
+        "            while lectura2:\n",
+        "                a = input('¿Querés seguir interactuando? \\n responde con un número para ir directamente al tema o N para salir: \\n')\n",
+        "                if a == 'N' or a == 'n' or a == 'no':\n",
+        "                    print('Espero que hayas encontrado todo lo que buscabas, éxitos!')\n",
+        "                    # espera en segundos\n",
+        "                    time.sleep(4)\n",
+        "                    lectura = False\n",
+        "                    lectura2 = False\n",
+        "                    break\n",
+        "                else:\n",
+        "                    i = int(a)\n",
+        "                    if i in range(0,10):\n",
+        "                        texto_selecc = dataframe[(dataframe['numerador'] == i)]\n",
+        "                        titulo = list(texto_selecc['campo'])\n",
+        "                        print(f'Ok, vamos con {titulo}')\n",
+        "                        sample_text = list(texto_selecc['cuerpo'])\n",
+        "                        print(f\" {sample_text}\")\n",
+        "                        pass\n",
+        "                    else:\n",
+        "                        i = int(input('Revisa el índice, coloca un número válido: '))\n",
+        "                        texto_selecc = dataframe[(dataframe['numerador'] == int(i))]\n",
+        "                        sample_text = list(texto_selecc['cuerpo'])\n",
+        "                        print(f\" {sample_text}\")\n",
+        "                        pass\n",
+        "      \n",
+        "    else:\n",
+        "            i = int(input('Revisa el índice, coloca un número válido: '))\n",
+        "            lectura2 = True\n",
+        "            texto_selecc = dataframe[(dataframe['numerador'] == int(i))]\n",
+        "            sample_text = list(texto_selecc['cuerpo'])\n",
+        "            print(f\" {sample_text}\")\n",
+        "            while lectura2:\n",
+        "                a = input('¿Querés seguir interactuando? \\n responde con un número para ir directamente al tema o N para salir: \\n')\n",
+        "                if a == 'N' or a == 'n' or a == 'no':\n",
+        "                    print('Espero que hayas encontrado todo lo que buscabas, éxitos!')\n",
+        "                    # espera en segundos\n",
+        "                    time.sleep(4)\n",
+        "                    lectura = False\n",
+        "                    lectura2 = False\n",
+        "                    break\n",
+        "                else:\n",
+        "                    i = int(a)\n",
+        "                    if i in range(0,10):\n",
+        "                        texto_selecc = dataframe[(dataframe['numerador'] == i)]\n",
+        "                        titulo = list(texto_selecc['campo'])\n",
+        "                        print(f'Ok, vamos con {titulo}')\n",
+        "                        sample_text = list(texto_selecc['cuerpo'])\n",
+        "                        print(f\" {sample_text}\")\n",
+        "                        pass\n",
+        "                    else:\n",
+        "                        i = int(input('Revisa el índice, coloca un número válido: '))\n",
+        "                        texto_selecc = dataframe[(dataframe['numerador'] == int(i))]\n",
+        "                        sample_text = list(texto_selecc['cuerpo'])\n",
+        "                        print(f\" {sample_text}\")\n",
+        "                        pass"
+      ],
+      "metadata": {
+        "id": "iZicXuRFPQaN"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
